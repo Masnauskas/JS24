@@ -30,9 +30,9 @@ body {
 }
 
 .content-wrapper,
+.form-wrapper,
 #formFilled {
-  margin: 0 10% 0 10%;
-  margin-top: 50px;
+  margin: 50px 10% 20px 10%;
 }
 
 .filters {
@@ -110,12 +110,6 @@ body {
 
 .hide {
   display: none;
-}
-
-.form-wrapper {
-  margin: 0 10% 0 10%;
-  margin-top: 50px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form {

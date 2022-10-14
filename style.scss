@@ -28,10 +28,11 @@ body {
 }
 
 .content-wrapper,
+.form-wrapper,
 #formFilled {
-  margin: 0 10% 0 10%;
-  margin-top: 50px;
+  margin: 50px 10% 20px 10%;
 }
+
 .filters {
   margin-top: 10px;
   display: flex;
@@ -103,11 +104,6 @@ body {
   display: none;
 }
 
-.form-wrapper {
-  margin: 0 10% 0 10%;
-  margin-top: 50px;
-  font-family: $font-style-1;
-}
 form {
   display: flex;
   flex-direction: column;
