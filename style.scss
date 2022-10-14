@@ -1,0 +1,201 @@
+$background-color-green: aquamarine;
+$font-style-1: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+}
+
+header {
+  background-color: $background-color-green;
+}
+body {
+  font-family: $font-style-1;
+}
+.titleContainer {
+  margin: 0 10% 0 10%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.content-wrapper,
+#formFilled {
+  margin: 0 10% 0 10%;
+  margin-top: 50px;
+}
+.filters {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-buttons button {
+  background-color: white;
+  // border: 2px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+}
+.add-property-button {
+  height: 30px;
+  padding: 0 10px;
+  color: white;
+  background-color: $background-color-green;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid $background-color-green;
+}
+.add-property-button:hover {
+  background-color: white;
+  color: $background-color-green;
+
+  border-radius: 3px;
+}
+
+.property-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  gap: 20px;
+}
+.property-box {
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+  height: 40%;
+}
+.property-img {
+  height: 100%;
+  width: 100%;
+}
+.description-container {
+  padding: 20px;
+}
+
+.description-container p:nth-child(3) {
+  margin-top: 20px;
+}
+.filter-buttons button:not(:first-child) {
+  margin-left: 5px;
+}
+.filter-buttons button:hover {
+  color: $background-color-green;
+  border: 2px solid $background-color-green;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.form-wrapper {
+  margin: 0 10% 0 10%;
+  margin-top: 50px;
+  font-family: $font-style-1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 10px;
+}
+form label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+}
+form button {
+  width: 120px;
+
+  margin-bottom: 10px;
+}
+form textarea {
+  margin-bottom: 10px;
+}
+#go-to-properties {
+  margin-top: 10px;
+  width: 120px;
+}
+
+@media screen and (max-width: 550px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-buttons button:not(:first-child) {
+    margin-left: 0;
+  }
+  .filter-buttons button {
+    margin-bottom: 10px;
+  }
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+  }
+  .filter {
+    text-align: center;
+  }
+  .filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.active {
+  background-color: $background-color-green;
+  color: $background-color-green;
+
+  border: 2px solid $background-color-green;
+}
+
+#showAll {
+  margin-top: 10px;
+  background-color: white;
+  // border: 2px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+  width: 110px;
+}
+#showAll:hover {
+  color: $background-color-green;
+  border: 2px solid $background-color-green;
+  cursor: pointer;
+}
+@media screen and (max-width: 230px) {
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Property</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="add.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="titleContainer">
+        <h1 class="title">Add your property for sale</h1>
+        <div class="subtitle">
+          Yes, you can sell wherer you live and get cash!!
+        </div>
+      </div>
+    </header>
+    <div class="form-wrapper">
+      <div class="form-container-box">
+        <h2>Add Poperty</h2>
+        <form>
+          <label for="add-image">Image</label>
+          <input
+            type="text"
+            id="add-image"
+            name="add-image"
+            placeholder="https://google.com/logo.png"
+          />
+          <label for="add-city">City</label>
+          <input
+            type="text"
+            id="add-city"
+            name="add-city"
+            placeholder="Vilnius"
+          />
+          <label for="add-price">Price, EUR</label
+          ><input
+            type="number"
+            name="add-price"
+            id="add-price"
+            placeholder="80000"
+          />
+
+          <label for="add-description">Property description</label>
+          <textarea
+            name="add-description"
+            id="add-description"
+            placeholder="Your description goes here..."
+          ></textarea>
+
+          <button
+            type="submit"
+            id="add-property-button"
+            class="add-property-button"
+          >
+            Add property
+          </button>
+        </form>
+      </div>
+      <button id="go-to-properties" class="add-property-button">
+        See properties
+      </button>
+    </div>
+    <h1 id="formFilled"></h1>
+  </body>
+</html>

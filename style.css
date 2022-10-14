@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-color: aquamarine;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titleContainer {
+  margin: 0 10% 0 10%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.content-wrapper,
+#formFilled {
+  margin: 0 10% 0 10%;
+  margin-top: 50px;
+}
+
+.filters {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-buttons button {
+  background-color: white;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.add-property-button {
+  height: 30px;
+  padding: 0 10px;
+  color: white;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid aquamarine;
+}
+
+.add-property-button:hover {
+  background-color: white;
+  color: aquamarine;
+  border-radius: 3px;
+}
+
+.property-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.property-box {
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+  height: 40%;
+}
+
+.property-img {
+  height: 100%;
+  width: 100%;
+}
+
+.description-container {
+  padding: 20px;
+}
+
+.description-container p:nth-child(3) {
+  margin-top: 20px;
+}
+
+.filter-buttons button:not(:first-child) {
+  margin-left: 5px;
+}
+
+.filter-buttons button:hover {
+  color: aquamarine;
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.form-wrapper {
+  margin: 0 10% 0 10%;
+  margin-top: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+}
+
+form label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+}
+
+form button {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  margin-bottom: 10px;
+}
+
+#go-to-properties {
+  margin-top: 10px;
+  width: 120px;
+}
+
+@media screen and (max-width: 550px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-buttons button:not(:first-child) {
+    margin-left: 0;
+  }
+  .filter-buttons button {
+    margin-bottom: 10px;
+  }
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+  }
+  .filter {
+    text-align: center;
+  }
+  .filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.active {
+  background-color: aquamarine;
+  color: aquamarine;
+  border: 2px solid aquamarine;
+}
+
+#showAll {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+  width: 110px;
+}
+
+#showAll:hover {
+  color: aquamarine;
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 230px) {
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=style.css.map */
